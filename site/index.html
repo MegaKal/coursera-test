@@ -3,21 +3,64 @@
  <html>
          <head>
                  <meta charset="utf-8">
-                 <meta content="width=device-width" name="viewport initial-scale=1">
+                 <meta name="viewport" content="width=device-width, initial-scale=1">
+                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                 <link rel="stylesheet" href="css/bootstrap.min.css">
-                 <link rel="stylesheet" href="css/style.css">
+
+                 
                  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+                 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="css/style.css">
 
                  <title>Davis Chu's Chine Bistro</title>
          </head>
 
          <body>
-                 
+                <header>
+                        <nav id="header-nav" class="navbar navbar-expand-lg navbar-light"> <!-- Streachess all the way of the screen-->
+                                <div class="container"> <!-- Stays in the middle of the screen-->
+                                        <div class="navbar-header">
+                                                <!--LOGO-->
+                                                <a href="index.html" class="float-left d-none d-md-block">
+                                                        <div id="logo-img" alt="Logo Image"></div>
+                                                </a>
+
+                                                <!-- Title -->
+                                                <div class="navbar-brand">
+                                                        <a href="index.html"><h1>ትንሳኤ ግሮሰሪ</h1></a>
+                                                        <p>
+                                                                <img src="images/start.png"/> <span>ፍትፍቱም ፊቱም</span> 
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Menu -->
+                                        <button class="navbar-toggler" type="button" 
+                                                        data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                                                        aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+                                                        aria-label="Toggle navigation">
+                                                                <span class="navbar-toggler-icon"></span>
+                                                 </button>
+                                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                                    <div id="nav-list" class="navbar-nav ml-auto">
+                                                        <a class="nav-item nav-link active" href="#">
+                                                                <span class="fa fa-cutlery" aria-hidden="true"></span><br class="d-none d-md-block"> ማውጫ</a>
+                                                        <a class="nav-item nav-link" href="#">
+                                                                <span class="fa fa-info-circle"></span><br class="d-none d-md-block"> ስለኛ</a>
+                                                        <a class="nav-item nav-link d-none d-md-block" href="tel:+251911308940">
+                                                                <span class="fa fa-phone" aria-hidden="true"></span><br class="d-none d-md-block"> +251 930 8940 </a>
+                                                    </div>
+                                                </div>
+                                </div>
+                        </nav>
+                </header>
+
 
                 <script src="js/jquery-3.5.1.min.js"></script>
                 <script src="js/bootstrap.min.js"></script>
                 <script src="js/script.js"></script>
 
+                
          </body>
  </html>
