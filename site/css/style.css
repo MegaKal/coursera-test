@@ -57,7 +57,7 @@ body {
        text-align: center;
 }
 
-#nav-list a:hover {
+#nav-list a:hover, #nav-list a.active {
        color: #e7e7e7;
 }
 
@@ -104,6 +104,90 @@ body {
        opacity: 0.8;
 }
 
+/* Catagory Tile */
+.catagory-tile {
+       position: relative;
+       border: 2px solid #3F0c1f;
+       overflow: hidden;
+       width: 200px;
+       height: 200px;
+       margin: 0 auto 15px;
+}
+
+.catagory-tile span {
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       text-align: center;
+       font-size: 1.2em;
+       text-transform: uppercase;
+       background-color: #000;
+       color: #fff;
+       opacity: 0.8;
+}
+
+.catagory-tile:hover {
+       box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu_catagories_title + div {
+       margin-bottom: 50px;
+}
+
+/* End of Catagory Tile */
+
+/* Single Page Cateegory */
+.menu-item-tile {
+       margin-bottom: 25px;
+}
+.menu-item-tile hr {
+       background-color: #ffffff;
+       width: 100%;
+}
+
+.menu-item-tile .menu-item-price {
+       font-size: 1.1em;
+       text-align: right;
+       margin-top: -15px;
+       margin-right: -15px;
+}
+
+.menu-item-tile .menu-item-price span {
+       font-size: 0.6em;
+}
+.menu-item-photo {
+       position: relative;
+       border: 2px solid #3f0c1f;
+       overflow: hidden;
+       padding: 0;
+       margin-right: -15px;
+       margin-left: auto;
+       margin-bottom: 20px;
+       max-width: 250px;
+}
+
+.menu-item-photo div {
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       width: 80px;
+       background-color: #557c3e;
+       text-align: center;
+}
+
+.menu-item-description {
+       padding-right: 30px;
+}
+h3.menu-item-tile {
+       margin: 0 0 10px;
+}
+
+.menu-item-details {
+       font-size: 0.9em;
+       font-style: italic;
+}
+/* End of Single Page Category */
+
 /* Footer */
 footer.panel-footer {
        background-color:  #3a2424;
@@ -140,7 +224,9 @@ footer .row section {
 }
 
 div.text-center {
-       margin-top: 55px;
+       margin-top: 25px;
+       margin-bottom: 25px;
+       font-size: 0.8em;
 }
 
 footer section hr {          
@@ -219,5 +305,19 @@ footer section hr {
        }
        #map-tile {
               height: 150px;
+       }
+
+       .menu-item-photo {
+              margin-right: auto;
+       }
+       .menu-item-tile .menu-item-price {
+             
+              text-align: center;
+       }
+       .menu-item-description {
+              text-align: center;
+       }
+       .menu-item-description h3 {
+              margin-top: 25px;
        }
 }
