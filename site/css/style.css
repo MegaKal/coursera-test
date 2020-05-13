@@ -70,8 +70,42 @@ body {
 }
 
 
+/* Home Tile */
+
+#menu-tile, #specials-tile, #map-tile{
+       height: 250px;
+       width: 100%;
+       margin-bottom: 15px;
+       position: relative;
+       border: 2px solid #3f0c1f;
+       overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+       box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+       background: url("../images/beyaynet.jpeg") no-repeat;
+       background-position: center;
+}
+#specials-tile {
+       background: url("../images/tibs.jpg") no-repeat;
+       background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       text-align: center;
+       font-size: 1.6em;
+       text-transform: uppercase;
+       background-color: #000;
+       color: #fff;
+       opacity: 0.8;
+}
 
 
+/* End Home Tile */
 
 /* Extra Large Screens */
 @media (min-width: 1200px){
@@ -124,7 +158,7 @@ body {
 /* Extra small Screens */
 @media (max-width: 575px) {
        .navbar-brand > a > h1 {
-              font-size: 0.8em;
+              font-size: 1em;
        }
        .navbar-brand > p > span {
               font-size: 0.5em;
@@ -135,5 +169,13 @@ body {
               padding: 0;
               box-shadow: 0 0 50px #3f0c1f;
               border: 2px solid #3f0c1f;
+       }
+       #menu-tile, #specials-tile, #map-tile {
+              width: 250px;
+              height: 150px;
+              margin: 0 auto 15px;
+       }
+       #map-tile {
+              height: 150px;
        }
 }
