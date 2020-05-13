@@ -116,6 +116,10 @@ footer .row {
        margin-bottom: 15px;
 }
 
+footer .row section {
+       text-align: center;
+}
+
 #hours span, #address span, #testimonies span {
        font-size: 1.3em;
 
@@ -134,8 +138,14 @@ footer .row {
 #testimonies p {
        margin-top: 25px;
 }
+
+div.text-center {
+       margin-top: 55px;
+}
+
 footer section hr {          
   background-color: #ffffff;
+  width: 50%;
 }
 /* End Home Tile */
 
