@@ -1,5 +1,5 @@
 body {
-       background-color: #61222f;
+       background-color: #751337;
        color: #fff;
        font-size: 16px;
        font-family: 'Oxygen', sans-serif;
@@ -99,12 +99,44 @@ body {
        text-align: center;
        font-size: 1.6em;
        text-transform: uppercase;
-       background-color: #000;
+       background-color: #91690e;
        color: #fff;
        opacity: 0.8;
 }
 
+/* Footer */
+footer.panel-footer {
+       background-color:  #3a2424;
+       margin-top: 15px;
+       padding-top: 35px;
+       padding-bottom: 30px;
+       border-top: 0;
+}
+footer .row {
+       margin-bottom: 15px;
+}
 
+#hours span, #address span, #testimonies span {
+       font-size: 1.3em;
+
+}
+#hours, #address  {
+       line-height: 2;
+}
+#address p {
+       color: #c6f1ac;
+       font-size: 1.2em;
+}
+#testimonies {
+       font-style: italic;
+}
+
+#testimonies p {
+       margin-top: 25px;
+}
+footer section hr {          
+  background-color: #ffffff;
+}
 /* End Home Tile */
 
 /* Extra Large Screens */
