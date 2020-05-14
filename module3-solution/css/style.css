@@ -1,0 +1,29 @@
+body {
+        font-size: 16px;
+        box-sizing: border-box;
+}
+header {
+        background-color:  rgb(150, 150, 150);;
+}
+.container h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+}
+#navbarNavAltMarkup > div {
+        background-color: rgb(182, 182, 182);
+        color: #fff;
+
+}
+#navbarNavAltMarkup > div > a {
+        border-bottom: 1px solid white;
+        color: #000;
+        font-size: 1.2em;
+}
+
+section.item {
+        background-color: rgb(190, 190, 190);        
+}
+
+.item-description {
+        padding: 8px;
+}
