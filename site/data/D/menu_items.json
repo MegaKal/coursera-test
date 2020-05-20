@@ -1,0 +1,53 @@
+[
+        {
+                "id": 1,
+                "description": "Beer is one of the oldest and most widely consumed alcoholic drinks in the world, and the third most popular drink overall after water and tea. Beer is brewed from cereal grains—most commonly from malted barley, though wheat, maize (corn), and rice are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer.",
+                "name": "Beer",
+                "catagory": "metet",
+                "special_instructions": "special drinks instruction",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 2,
+                "description": "large",
+                "name": "Gen",
+                "catagory": "metet",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 3,
+                "description": "large",
+                "name": "Whusque",
+                "catagory": "metet",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 4,
+                "description": "large",
+                "name": "Vodca",
+                "catagory": "metet",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 5,
+                "description": "large",
+                "name": "Wine",
+                "catagory": "metet",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        }
+]

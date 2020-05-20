@@ -1,0 +1,63 @@
+[
+        {
+                "id": 1,
+                "description": "large",
+                "name": "Mirinda",
+                "catagory": "leslasa",
+                "special_instructions": "Leslasa metetoch beyeaynet",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 2,
+                "description": "large",
+                "name": "Sprite",
+                "catagory": "leslasa",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 3,
+                "description": "large",
+                "name": "Cocacola",
+                "catagory": "leslasa",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 4,
+                "description": "large",
+                "name": "Nigus",
+                "catagory": "leslasa",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 5,
+                "description": "large",
+                "name": "Malta",
+                "catagory": "leslasa",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 6,
+                "description": "large",
+                "name": "Fanta",
+                "catagory": "leslasa",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        }
+]

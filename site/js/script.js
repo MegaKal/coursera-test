@@ -2,7 +2,6 @@ $(function() { // Means when DOM components are loaded
         
 
                 $("#navbarToggle").blur(function(event) {
-                                console.log("Lost Focus");
                                 let screenWidth = window.innerWidth;
                                 let breakPoint = 992;
                                 if (screenWidth < breakPoint) {
@@ -18,7 +17,18 @@ $(function() { // Means when DOM components are loaded
 (function(global){
         let tinsae = {};
         let homeHTML = "snippets/home-snippet.html";
-        
+        let catagoriesTitleHTML = "snippets/catagories-title-snippet.html";
+        let catagoryHTML = "snippets/catagory-snippet.html";
+        let allCatagoriesUrl = "data/catagories.json";
+
+        let menuItemUrl = "data/";
+        let menuItemsTitleHtml = "snippets/menu-items-title.html";
+        let menuItemHtml = "snippets/menu-item.html";
+
+
+
+
+
         let insertHTML = function(selector, html) {
                 let targetElement = document.querySelector(selector);
                 targetElement.innerHTML = html;
@@ -30,6 +40,14 @@ $(function() { // Means when DOM components are loaded
                             </div>`;
                 insertHTML(selector, html);
         }
+
+        let insertProperty = function(string, propName, propValue) {
+                var propToReplase = "{{" + propName + "}}";
+                string = string.replace(new RegExp(propToReplase, "g"), propValue);
+                return string;
+        }
+
+
 
         document.addEventListener("DOMContentLoaded", function(event) {
                 showLoading("#main-content");
@@ -43,6 +61,139 @@ $(function() { // Means when DOM components are loaded
                 )
 
         });
+        tinsae.loadMenuCatagories = function() {
+                showLoading("#main-content");
+                $ajaxUtils.sendGetRequest(allCatagoriesUrl, buildAndShowCatagoriesHTML);
+        }
+
+        tinsae.loadMenuItems = function(short_name) {
+                showLoading("#main-content");
+                let url = menuItemUrl + short_name + "/menu_items.json";
+                
+                $ajaxUtils.sendGetRequest(url, buildAndShowMenuItemsHTML);
+
+        }
+
+        function buildAndShowCatagoriesHTML(catagories){
+                
+                
+                $ajaxUtils.sendGetRequest(
+                        catagoriesTitleHTML,
+                        function(catagoriesTitleHTML) {
+                                $ajaxUtils.sendGetRequest(
+                                        catagoryHTML,
+                                        function(catagoryHTML) {                                      
+                                                let catagoriesViewHtml = 
+                                                buildCatagoriesViewHtml(catagories, 
+                                                        catagoriesTitleHTML,
+                                                        catagoryHTML
+                                );
+                                insertHTML("#main-content", catagoriesViewHtml);
+                                                }, false);
+                        },
+                        false
+                );
+        }
+
+        function buildAndShowMenuItemsHTML(catagoryMenuItems) {
+                
+                $ajaxUtils.sendGetRequest(
+                        menuItemsTitleHtml,
+                        function(menuItemsTitleHtml) {
+                                $ajaxUtils.sendGetRequest(
+                                        menuItemHtml,
+                                        function(menuItemHtml) {
+                                                let menuItemsViewHtml =
+                                                        buildMenuItemsViewHtml(catagoryMenuItems,
+                                                                menuItemsTitleHtml,
+                                                                menuItemHtml);
+                                                insertHTML("#main-content", menuItemsViewHtml);
+                                        },
+                                        false); 
+                        },
+                        false
+                );
+        }
+
+        function buildCatagoriesViewHtml(catagories, 
+                catagoriesTitleHTML,
+                catagoryHTML) {
+                        
+                        let finalHTML = catagoriesTitleHTML;
+                        finalHTML += "<section class='row'>";
+                        for( let i = 0; i < catagories.length; i++) {
+                                let html = catagoryHTML;
+                                let name = "" + catagories[i].name;
+                                var short_name = catagories[i].short_name;
+                                html = insertProperty(html, "name", name);
+                                html = insertProperty(html, "short_name", short_name);
+                                finalHTML += html;
+                        }
+                        finalHTML += "</section>";
+
+                        return finalHTML;
+                }
+        function buildMenuItemsViewHtml(
+                categoryMenuItems,
+                menuItemsTitleHtml,
+                menuItemHtml) {
+
+                                     
+                        menuItemsTitleHtml =
+                        insertProperty(menuItemsTitleHtml,
+                                        "name",
+                                        categoryMenuItems[0].catagory);
+
+                        menuItemsTitleHtml =
+                        insertProperty(menuItemsTitleHtml,
+                                        "special_instructions",
+                                        categoryMenuItems[0].special_instructions);
+
+                        var finalHtml = menuItemsTitleHtml;
+                        finalHtml += "<section class='row'>";
+
+                        // // Loop over menu items
+                        var menuItems = categoryMenuItems;
+
+                        // var catShortName = categoryMenuItems.catagory;
+                        for (var i = 0; i < menuItems.length; i++) {
+                                // Insert menu item values
+                                var html = menuItemHtml;
+                                html =
+                                insertProperty(html, "id", menuItems[i].id);
+                
+                                html =
+                                insertProperty(html,
+                                                "birr",
+                                                menuItems[i].price.birr);
+                                
+                                html =
+                                insertProperty(html,
+                                                "cent",
+                                                menuItems[i].price.cent);
+                             
+                                html =
+                                insertProperty(html,
+                                                "name",
+                                                menuItems[i].name);
+                                html =
+                                insertProperty(html,
+                                                "description",
+                                                menuItems[i].description);
+                                                html =
+                                insertProperty(html,
+                                                "catagory",
+                                                menuItems[i].catagory);
+
+                                
+
+                                finalHtml += html;
+                        }
+
+                        finalHtml += "</section>";
+                        return finalHtml;
+
+                }
 
         global.$tinsae = tinsae;
         // Whatever we are going to attach to tinsae will be exposed to a global scope;

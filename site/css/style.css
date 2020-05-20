@@ -1,16 +1,16 @@
 body {
-       background-color: #751337;
+       background-color: #7c7c7c;
        color: #fff;
        font-size: 16px;
        font-family: 'Oxygen', sans-serif;
 }
 
 #header-nav {
-       background-color: #f6b319;
+       background-color: #35080a;
 }
 
 #logo-img {
-       background: transparent url('../images/pizza-napoli-cafe-fast-food-restaurant-menu-dining-knife-and-fork-cartoon-logo.png') no-repeat center;
+       background: transparent url('../images/logo.png') no-repeat center;
        width: 150px;
        height: 150px;
        margin: 10px 15px 10px 0;
@@ -22,7 +22,7 @@ body {
 
 .navbar-brand h1 {
        font-family: 'Lora', serif;
-       color: #557c3e;
+       color: #98ffb2;
        font-size: 1.7em;
        font-weight: bold;
        text-shadow: 1px 1px 1px #222222;
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar-brand p {
-       color: #951c49;
+       color: #c7c7c7;
        font-size: 0.7;
        margin-top: 15px;
 }
@@ -53,12 +53,12 @@ body {
 }
 
 #nav-list a {
-       color: #951c49;
+       color: #868686;
        text-align: center;
 }
 
 #nav-list a:hover, #nav-list a.active {
-       color: #e7e7e7;
+       color: #98ffb2;
 }
 
 #nav-list a span {
@@ -84,11 +84,11 @@ body {
        box-shadow: 0 1px 5px 1px #cccccc;
 }
 #menu-tile {
-       background: url("../images/beyaynet.jpeg") no-repeat;
+       background: url("../images/metet.jpg") no-repeat;
        background-position: center;
 }
 #specials-tile {
-       background: url("../images/tibs.jpg") no-repeat;
+       background: url("../images/fisik.jpg") no-repeat;
        background-position: center;
 }
 #menu-tile span, #specials-tile span, #map-tile span {

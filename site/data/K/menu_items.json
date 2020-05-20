@@ -1,0 +1,53 @@
+[
+        {
+                "id": 1,
+                "description": "large",
+                "name": "Enkulal Sandwich",
+                "catagory": "kurs",
+                "special_instructions": "Kursoten be Tinsae",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 2,
+                "description": "large",
+                "name": "Firfir",
+                "catagory": "kurs",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 3,
+                "description": "large",
+                "name": "Pasta",
+                "catagory": "kurs",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 4,
+                "description": "large",
+                "name": "Full",
+                "catagory": "kurs",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 5,
+                "description": "large",
+                "name": "Enkulal Firfir",
+                "catagory": "kurs",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        }
+]

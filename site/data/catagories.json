@@ -1,0 +1,37 @@
+[
+        {
+                "id": 1,
+                "name": "mesa",
+                "short_name": "L"
+        },
+        {
+                "id": 2,
+                "name": "kurs",
+                "short_name": "K"
+        },
+        {
+                "id": 3,
+                "name": "tsome",
+                "short_name": "T"
+        },
+        {
+                "id": 4,
+                "name": "leslasa",
+                "short_name": "S"
+        },
+        {
+                "id": 5,
+                "name": "fisik",
+                "short_name": "F"
+        },
+        {
+                "id": 6,
+                "name": "metet",
+                "short_name": "D"
+        },
+        {
+                "id": 7,
+                "name": "tikus",
+                "short_name": "H"
+        }
+]

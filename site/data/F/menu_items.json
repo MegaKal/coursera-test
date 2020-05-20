@@ -1,0 +1,53 @@
+[
+        {
+                "id": 1,
+                "description": "large",
+                "name": "Tibs",
+                "catagory": "fisik",
+                "special_instructions": "special drinks instruction",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 2,
+                "description": "large",
+                "name": "Kikil",
+                "catagory": "fisik",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 3,
+                "description": "large",
+                "name": "Kitfo",
+                "catagory": "fisik",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 4,
+                "description": "large",
+                "name": "Dulet",
+                "catagory": "fisik",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        },
+        {
+                "id": 5,
+                "description": "large",
+                "name": "Kuanta Firfir",
+                "catagory": "fisik",
+                "price": {
+                        "birr": 119,
+                        "cent": 99
+                }
+        }
+]
