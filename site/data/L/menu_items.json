@@ -2,7 +2,7 @@
         {
                 "id": 1,
                 "description": "large",
-                "name": "Beyaynet",
+                "name": "በየ አይነቱ",
                 "catagory": "mesa",
                 "special_instructions": "Yemesa Megeboch",
                 "price": {
@@ -13,7 +13,7 @@
         {
                 "id": 2,
                 "description": "large",
-                "name": "Tibs",
+                "name": "ጥብስ",
                 "catagory": "mesa",
                 "price": {
                         "birr": 119,
@@ -23,7 +23,7 @@
         {
                 "id": 3,
                 "description": "large",
-                "name": "Shiro",
+                "name": "ሽሮ",
                 "catagory": "mesa",
                 "price": {
                         "birr": 119,
@@ -33,7 +33,7 @@
         {
                 "id": 4,
                 "description": "Doro",
-                "name": "Timatim Leb Leb",
+                "name": "ቲማቲም ልብ ለብ",
                 "catagory": "mesa",
                 "price": {
                         "birr": 119,

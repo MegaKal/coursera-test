@@ -2,7 +2,7 @@
         {
                 "id": 1,
                 "description": "large",
-                "name": "Mirinda",
+                "name": "ሚሪንዳ",
                 "catagory": "leslasa",
                 "special_instructions": "Leslasa metetoch beyeaynet",
                 "price": {
@@ -13,7 +13,7 @@
         {
                 "id": 2,
                 "description": "large",
-                "name": "Sprite",
+                "name": "ስፕራይት",
                 "catagory": "leslasa",
                 "price": {
                         "birr": 119,
@@ -23,7 +23,7 @@
         {
                 "id": 3,
                 "description": "large",
-                "name": "Cocacola",
+                "name": "ኮካኮላ",
                 "catagory": "leslasa",
                 "price": {
                         "birr": 119,
@@ -33,7 +33,7 @@
         {
                 "id": 4,
                 "description": "large",
-                "name": "Nigus",
+                "name": "ንጉስ",
                 "catagory": "leslasa",
                 "price": {
                         "birr": 119,
@@ -43,7 +43,7 @@
         {
                 "id": 5,
                 "description": "large",
-                "name": "Malta",
+                "name": "ማልታ",
                 "catagory": "leslasa",
                 "price": {
                         "birr": 119,
@@ -53,7 +53,7 @@
         {
                 "id": 6,
                 "description": "large",
-                "name": "Fanta",
+                "name": "ፋንታ",
                 "catagory": "leslasa",
                 "price": {
                         "birr": 119,

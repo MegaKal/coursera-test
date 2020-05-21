@@ -2,7 +2,7 @@
         {
                 "id": 1,
                 "description": "large",
-                "name": "Enkulal Sandwich",
+                "name": "ሳንድዊች",
                 "catagory": "kurs",
                 "special_instructions": "Kursoten be Tinsae",
                 "price": {
@@ -13,7 +13,7 @@
         {
                 "id": 2,
                 "description": "large",
-                "name": "Firfir",
+                "name": "ፍርፍር",
                 "catagory": "kurs",
                 "price": {
                         "birr": 119,
@@ -23,7 +23,7 @@
         {
                 "id": 3,
                 "description": "large",
-                "name": "Pasta",
+                "name": "ፖስታ",
                 "catagory": "kurs",
                 "price": {
                         "birr": 119,
@@ -33,7 +33,7 @@
         {
                 "id": 4,
                 "description": "large",
-                "name": "Full",
+                "name": "ፉል",
                 "catagory": "kurs",
                 "price": {
                         "birr": 119,
@@ -43,7 +43,7 @@
         {
                 "id": 5,
                 "description": "large",
-                "name": "Enkulal Firfir",
+                "name": "እንቁላል ፍርፍር",
                 "catagory": "kurs",
                 "price": {
                         "birr": 119,

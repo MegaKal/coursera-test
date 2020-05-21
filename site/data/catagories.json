@@ -1,37 +1,38 @@
 [
         {
                 "id": 1,
-                "name": "mesa",
+                "note to do here": "change the names to amharic and the images in images/",
+                "name": "ምሳ",
                 "short_name": "L"
         },
         {
                 "id": 2,
-                "name": "kurs",
+                "name": "ቁርስ",
                 "short_name": "K"
         },
         {
                 "id": 3,
-                "name": "tsome",
+                "name": "ፆም",
                 "short_name": "T"
         },
         {
                 "id": 4,
-                "name": "leslasa",
+                "name": "ለስላሳ",
                 "short_name": "S"
         },
         {
                 "id": 5,
-                "name": "fisik",
+                "name": "ፍስክ",
                 "short_name": "F"
         },
         {
                 "id": 6,
-                "name": "metet",
+                "name": "መጠጥ",
                 "short_name": "D"
         },
         {
                 "id": 7,
-                "name": "tikus",
+                "name": "ትኩስ",
                 "short_name": "H"
         }
 ]

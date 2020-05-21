@@ -2,7 +2,7 @@
         {
                 "id": 1,
                 "description": "large",
-                "name": "Shiro",
+                "name": "ሽሮ",
                 "catagory": "tsome",
                 "special_instructions": "Yetsome megeb",
                 "price": {
@@ -13,7 +13,7 @@
         {
                 "id": 2,
                 "description": "large",
-                "name": "Yetsome Firfir",
+                "name": "የፆም ፍርፍር",
                 "catagory": "tsome",
                 "price": {
                         "birr": 119,
@@ -23,7 +23,7 @@
         {
                 "id": 3,
                 "description": "large",
-                "name": "Beyaynet",
+                "name": "በየ አይነቱ",
                 "catagory": "tsome",
                 "price": {
                         "birr": 119,
@@ -33,7 +33,7 @@
         {
                 "id": 4,
                 "description": "large",
-                "name": "Pasta",
+                "name": "ፖስታ",
                 "catagory": "tsome",
                 "price": {
                         "birr": 119,
@@ -43,7 +43,7 @@
         {
                 "id": 5,
                 "description": "large",
-                "name": "Timatim",
+                "name": "ቲማቲም",
                 "catagory": "tsome",
                 "price": {
                         "birr": 119,
