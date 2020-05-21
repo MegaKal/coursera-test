@@ -24,10 +24,8 @@ $(function() { // Means when DOM components are loaded
         let menuItemUrl = "data/";
         let menuItemsTitleHtml = "snippets/menu-items-title.html";
         let menuItemHtml = "snippets/menu-item.html";
-
-
-
-
+        
+        let aboutHtml = "snippets/about-snippet.html";
 
         let insertHTML = function(selector, html) {
                 let targetElement = document.querySelector(selector);
@@ -48,7 +46,6 @@ $(function() { // Means when DOM components are loaded
         }
 
 
-
         document.addEventListener("DOMContentLoaded", function(event) {
                 showLoading("#main-content");
                 $ajaxUtils.sendGetRequest(
@@ -61,17 +58,69 @@ $(function() { // Means when DOM components are loaded
                 )
 
         });
+
+        function switchMenuToActive() {
+                // from Home to Menu
+                let style_class = document.querySelector("#navHome").className;
+                if(style_class.indexOf("active") == -1) {
+                        // From About to Menu
+                        style_class = document.querySelector("#navAbout").className;
+                }
+                // Deactivate Home or About
+                style_class = style_class.replace(new RegExp("active", "g"), "");
+                document.querySelector("#navHome").className = style_class;
+                document.querySelector("#navAbout").className = style_class;
+
+                // Activate Menu
+                style_class = document.querySelector("#navMenu").className;
+                if(style_class.indexOf("active") == -1) {
+                        style_class += " active";
+                        document.querySelector("#navMenu").className = style_class;
+                }
+        }
+
+
+        function switchAboutToActive() {
+                // from Home to About
+                let style_class = document.querySelector("#navHome").className;
+                if(style_class.indexOf("active") == -1) {
+                        // From Menu to About
+                        style_class = document.querySelector("#navMenu").className;
+                }
+                // Deactivate Home or Menu
+                style_class = style_class.replace(new RegExp("active", "g"), "");
+                document.querySelector("#navHome").className = style_class;
+                document.querySelector("#navMenu").className = style_class;
+
+                // Activate About
+                style_class = document.querySelector("#navAbout").className;
+                if(style_class.indexOf("active") == -1) {
+                        style_class += " active";
+                        document.querySelector("#navAbout").className = style_class;
+                }
+        }
+
         tinsae.loadMenuCatagories = function() {
                 showLoading("#main-content");
                 $ajaxUtils.sendGetRequest(allCatagoriesUrl, buildAndShowCatagoriesHTML);
+                switchMenuToActive();
+        }
+
+        tinsae.loadAbout = function() {
+                showLoading("#main-content");
+                switchAboutToActive();
+                $ajaxUtils.sendGetRequest(aboutHtml, buildAndShowAboutHTML, false);
         }
 
         tinsae.loadMenuItems = function(short_name) {
                 showLoading("#main-content");
+                switchMenuToActive();
                 let url = menuItemUrl + short_name + "/menu_items.json";
-                
                 $ajaxUtils.sendGetRequest(url, buildAndShowMenuItemsHTML);
 
+        }
+        function buildAndShowAboutHTML(response) {   
+                 insertHTML("#main-content", response);       
         }
 
         function buildAndShowCatagoriesHTML(catagories){
@@ -79,14 +128,14 @@ $(function() { // Means when DOM components are loaded
                 
                 $ajaxUtils.sendGetRequest(
                         catagoriesTitleHTML,
-                        function(catagoriesTitleHTML) {
+                        function(catagoriesTitleResponse) {
                                 $ajaxUtils.sendGetRequest(
                                         catagoryHTML,
-                                        function(catagoryHTML) {                                      
+                                        function(catagoryHTMLResponse) {                                      
                                                 let catagoriesViewHtml = 
                                                 buildCatagoriesViewHtml(catagories, 
-                                                        catagoriesTitleHTML,
-                                                        catagoryHTML
+                                                        catagoriesTitleResponse,
+                                                        catagoryHTMLResponse
                                 );
                                 insertHTML("#main-content", catagoriesViewHtml);
                                                 }, false);
@@ -114,6 +163,7 @@ $(function() { // Means when DOM components are loaded
                         false
                 );
         }
+       
 
         function buildCatagoriesViewHtml(catagories, 
                 catagoriesTitleHTML,

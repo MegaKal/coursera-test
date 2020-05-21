@@ -52,6 +52,7 @@ body {
        vertical-align: middle;
 }
 
+/* Here is the Navigation */
 #nav-list a {
        color: #868686;
        text-align: center;
@@ -68,7 +69,7 @@ body {
 #header-nav .container button.navbar-toggler {
        border: 1px solid #61222f;
 }
-
+/* End Navigation */
 
 /* Home Tile */
 
